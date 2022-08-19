@@ -1,0 +1,9 @@
+.product-list {
+    height: 720px;
+    width: 720px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    border: 1px solid black;
+  }

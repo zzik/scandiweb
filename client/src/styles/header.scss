@@ -1,0 +1,21 @@
+.header {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid black;
+}
+.navigation {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    width: 40%;
+  }
+  input{
+    width: 40%;
+  }
+}

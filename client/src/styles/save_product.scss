@@ -1,0 +1,46 @@
+.attributes_box {
+    border: 1px solid black;
+    min-height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .description {
+        width: 50%;
+        margin: 8px;
+        text-align: center;
+    }
+    .input_container {
+        width: 80%;
+    }
+}
+.dynamic_form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.type_control {
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+.input_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.general_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width:35%;
+}
+
+hr {
+    width: 70%;
+}

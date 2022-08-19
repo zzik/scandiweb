@@ -1,0 +1,30 @@
+@import "./utils.scss";
+@import './header.scss';
+@import './footer.scss';
+@import "./save_product.scss";
+@import './product_form.scss';
+@import './product_card.scss';
+@import './product_list.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+#root {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: column;
+ width: 720px;
+ height: 100vh;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_container {
+  margin: 12px;
+}
+
