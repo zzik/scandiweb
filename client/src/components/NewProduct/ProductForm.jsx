@@ -1,12 +1,12 @@
 import React from 'react'
 import GeneralInfo from './GeneralInfo'
 import TypeSwitcher from './TypeSwitcher'
-import { saveHandler } from '../../utils/saveHandler'
+import { numericValidation, saveHandler } from '../../utils/saveHandler'
 
 
 const ProductForm = () => {
   return (
-    <form id="product_form" onSubmit={saveHandler}>
+    <form id="product_form" onSubmit={saveHandler} onKeyUp={numericValidation}>
         <GeneralInfo />
         <TypeSwitcher />
     </form>
