@@ -5,9 +5,9 @@ header("Access-Control-Allow-Origin: *", 'Content-type: application/json');
 abstract class Connect
 {
   private $host = "localhost";
-  private $user = "root";
-  private $password = "";
-  private $dbName = "first_db";
+  private $user = "id21858412_root";
+  private $password = 'Master123!"#$';
+  private $dbName = "id21858412_products";
 
   protected function connect_service()
   {
