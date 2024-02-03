@@ -9,8 +9,8 @@ export const useProductData = () => {
     }
   
     useEffect(() => {
-      axios.get("http://localhost:80/scandiweb/server/index.php")
-      // axios.get("https://scandiweb-test-junior-developer.000webhostapp.com/index.php")
+      // axios.get("http://localhost:80/scandiweb/server/index.php")
+      axios.get("https://junior-scandiweb-test.000webhostapp.com/index.php")
         .then((fin) => dataHandler(fin.data))
     }, [])
 

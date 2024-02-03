@@ -4,8 +4,8 @@ export const deleteHandler = (e) => {
   const filteredArray = checkboxArray.filter((checkbox) => checkbox.checked)
   const valuesArray = filteredArray.map((element) => element.value)
   valuesArray.forEach((el) => {
-    // fetch(`https://scandiweb-test-junior-developer.000webhostapp.com/delete.php?sku=${el}`, {
-    fetch(`http://localhost/scandiweb/server/delete.php?sku=${el}`, {
+    fetch(`https://junior-scandiweb-test.000webhostapp.com/delete.php?sku=${el}`, {
+    // fetch(`http://localhost/scandiweb/server/delete.php?sku=${el}`, {
       method: "POST",
     })
   })

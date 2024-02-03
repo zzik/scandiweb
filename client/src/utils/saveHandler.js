@@ -26,16 +26,16 @@ export const saveHandler = (event) => {
   event.preventDefault()
 
   const sku = document.querySelector('#sku').value
-  const url = `http://localhost/scandiweb/server/check.php?sku=${sku}`
-  // const url = `https://scandiweb-test-junior-developer.000webhostapp.com/check.php?sku=${sku}`
+  // const url = `http://localhost/scandiweb/server/check.php?sku=${sku}`
+  const url = `https://junior-scandiweb-test.000webhostapp.com/check.php?sku=${sku}`
 
   let data = new FormData(event.target)
   let formObject = Object.fromEntries(data.entries())
   const queryParams = new URLSearchParams(formObject).toString()
 
   axios.get(url).then(response => 
-    response.data ? alert('Please enter a unique SKU.') : axios.post(`http://localhost/scandiweb/server/save.php?${queryParams}`).then(homeRoute)
-    // response.data ? alert('Please enter a unique SKU.') : axios.post(`https://scandiweb-test-junior-developer.000webhostapp.com/save.php?${queryParams}`).then(homeRoute)
+    // response.data ? alert('Please enter a unique SKU.') : axios.post(`http://localhost/scandiweb/server/save.php?${queryParams}`).then(homeRoute)
+    response.data ? alert('Please enter a unique SKU.') : axios.post(`https://junior-scandiweb-test.000webhostapp.com/save.php?${queryParams}`).then(homeRoute)
     )
 
 }
